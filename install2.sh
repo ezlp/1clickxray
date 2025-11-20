@@ -76,7 +76,7 @@ sleep 1
 
 # Install paket keempat
 print_msg $YB "Memasang build-essential dan dependensi lainnya..."
-apt install build-essential libpcre3 libpcre3-dev zlib1g zlib1g-dev openssl libssl-dev gcc clang llvm g++ valgrind make cmake debian-keyring debian-archive-keyring apt-transport-https systemd bind9-host gnupg2 ca-certificates lsb-release ubuntu-keyring debian-archive-keyring -y
+apt install build-essential libpcre2 libpcre2-dev zlib1g zlib1g-dev openssl libssl-dev gcc clang llvm g++ valgrind make cmake debian-keyring debian-archive-keyring apt-transport-https systemd bind9-host gnupg2 ca-certificates lsb-release ubuntu-keyring debian-archive-keyring -y
 apt install unzip python-is-python3 python3-pip -y
 pip install psutil pandas tabulate rich py-cpuinfo distro requests pycountry geoip2 #--break-system-packages
 check_success
@@ -914,7 +914,7 @@ cat > /usr/local/etc/xray/config/04_inbounds.json << END
       "settings": {
         "clients": [
           {
-            "email": "general@vmess-ws", 
+            "email": "general@vmess-ws",
             "id": "$uuid"
 #vmess
           }
