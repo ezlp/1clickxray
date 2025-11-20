@@ -77,8 +77,8 @@ sleep 1
 # Install paket keempat
 print_msg $YB "Memasang build-essential dan dependensi lainnya..."
 apt install build-essential libpcre2-8-0 libpcre2-dev zlib1g zlib1g-dev openssl libssl-dev gcc clang llvm g++ valgrind make cmake debian-keyring debian-archive-keyring apt-transport-https systemd bind9-host gnupg2 ca-certificates lsb-release ubuntu-keyring debian-archive-keyring -y
-apt install unzip python-is-python3 python3-pip -y
-pip install psutil pandas tabulate rich py-cpuinfo distro requests pycountry geoip2 #--break-system-packages
+apt install unzip python-is-python3 python3-pip pipx -y
+pipx install psutil pandas tabulate rich py-cpuinfo distro requests pycountry geoip2 #--break-system-packages
 check_success
 sleep 1
 
